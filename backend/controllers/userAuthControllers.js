@@ -48,12 +48,7 @@ const registeruser = asynchandler(async (req, res) => {
 // }
        
        
-        // if(email!='@gmail.com'){
-        //     res.status(400)
-        //     throw new Error("email verfication must be content")
-        // }
-     
-    
+      
     
        const data =  await User.create({
         name,

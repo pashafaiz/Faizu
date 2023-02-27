@@ -13,6 +13,10 @@ app.use('/profile',express.static('upload/Images'))
 app.use('/api/userAuth',require('./routes/userAUTHroutes'))
 app.use('/api/user',require('./routes/userRoutes'));
 app.use('/api/product', require('./routes/productRoutes'))
+app.use('/api/todo',require('./routes/todoRoutes'))
+app.use('/api/subject',require('./routes/studentRoutes/studentRouter'))
+app.use('/api/country',require('./routes/studentRoutes/studentCountryRoutes'))
+app.use('/api/course',require('./routes/studentRoutes/courseRouter'))
 const ConnectDB = require('./config/db')
 ConnectDB()
 
