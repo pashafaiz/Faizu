@@ -15,7 +15,7 @@ const postCourse = asynchandler(async(req,res)=>{
     console.log("=======>",data);
     res.status(200).json({
         data
-    })
+    });
 });
 
 
@@ -27,8 +27,15 @@ const getCourse = asynchandler(async(req,res)=>{
 });
 
 
+const SearchCourse = asynchandler(async(req,res)=>{
+    let data = await User.findById(req.params.id);
+    res.status(200).json(data);
+})
+
+
 
 module.exports = {
     postCourse,
-    getCourse
+    getCourse,
+    SearchCourse
 }
