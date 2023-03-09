@@ -22,6 +22,8 @@ const Slider =[
 ]
 
 
+
+
 module.exports ={
     getSixImage,
     getSliderImage
