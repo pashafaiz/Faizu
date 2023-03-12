@@ -29,6 +29,7 @@ app.use('/api/addlist',require('./routes/usersRouter/addlistRouter'));
 app.use('/api/wishlist',require('./routes/usersRouter/wishlistRouter'));
 app.use("/api/newproduct",require("./routes/ProductRouter/ProductsRouter"));
 app.use('/api/EightImage',require('./routes/EightRouters/EightImageRouter'));
+app.use('/api/addcart',require('./routes/cartProduct/cartProductRouters'))
 
 
 const ConnectDB = require('./config/db');
